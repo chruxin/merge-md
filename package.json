@@ -1,13 +1,13 @@
 {
   "name": "merge-md",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Merge files in a directory.",
   "main": "merge.js",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/42mandychen/merge-md.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/42mandychen/merge-md.git"
   },
-  "bugs" : "https://github.com/42mandychen/merge-md/issues",
+  "bugs": "https://github.com/42mandychen/merge-md/issues",
   "scripts": {
     "test": "test"
   },
