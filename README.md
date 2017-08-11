@@ -1,19 +1,61 @@
-# merge.md
+# merge-md
+
+https://www.npmjs.com/package/merge-md
 
 Once upon a time there is a computer science student. She has been taking notes in markdown for a summer course. Now it's almost final time, and she wants to merge all of her markdown notes into a single file.
 
-Because she is a computer science student, instead of doing it in 5 mins by copying and pasting, she chooses to spend 30 minutes writing a package to do the work (and possibly another 10 minutes publishing on npm). Ah, computer science student.
+Because she is a computer science student, instead of doing it in 5 mins by copying and pasting, she chooses to spend 30 minutes writing a package to do the work (and ~~possibly~~ another ~~10~~ 30 minutes publishing on npm). Ah, a computer science student.
 
-## Usage
+## Installation
+
+### Install from npm/yarn
+
+```bash
+$ npm install -g merge-md
+```
+
+or
+
+```bash
+$ yarn global add merge-md
+```
+
+to install globally.
+
+### Clone to local
 
 Clone this repo, `cd` into it, and then run
 
 ```bash
-$ node merge path/to/folder
+$ npm link
 ```
 
-and this package will merge all the files into one file called `merged.md`.
+## Usage
+
+This package will merge all the files in a directory into one file called `merged.md`.
 
 It now works for markdown files, but should really work for plain text and code files.
 
-It's very simple for now. Will probably publish on npm just for fun.
+### Provide directory
+
+```bash
+$ merge path/to/directory
+```
+
+This merges all the files in `path/to/directory`.
+
+Don't know what directory you want? Try running `$ pwd` inside the folder you want.
+
+### No provided directory
+
+```bash
+$ merge
+```
+
+This merges all the files in the directory where this command is run.
+
+## License
+
+Copyright 2017 Mandy Chen
+
+Licensed under [MIT](./license)
