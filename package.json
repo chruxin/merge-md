@@ -1,0 +1,15 @@
+{
+  "name": "merge.md",
+  "version": "1.0.0",
+  "description": "Merge files in a directory.",
+  "main": "merge.js",
+  "private": true,
+  "scripts": {
+    "test": "test"
+  },
+  "bin": {
+    "merge": "./merge.js"
+  },
+  "author": "Mandy Chen",
+  "license": "MIT"
+}
