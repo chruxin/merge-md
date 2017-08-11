@@ -1,5 +1,5 @@
 {
-  "name": "merge.md",
+  "name": "merge-md",
   "version": "1.0.0",
   "description": "Merge files in a directory.",
   "main": "merge.js",
