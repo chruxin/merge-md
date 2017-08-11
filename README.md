@@ -9,7 +9,7 @@ Because she is a computer science student, instead of doing it in 5 mins by copy
 Clone this repo, `cd` into it, and then run
 
 ```bash
-$ merge path/to/folder
+$ node merge path/to/folder
 ```
 
 and this package will merge all the files into one file called `merged.md`.
