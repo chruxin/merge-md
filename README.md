@@ -1,6 +1,7 @@
-# merge-md
+# merge-md 	![npm](https://img.shields.io/npm/dt/merge-md.svg)
 
-https://www.npmjs.com/package/merge-md
+[![NPM](https://nodei.co/npm/merge-md.png?compact=true)](https://www.npmjs.com/package/merge-md)
+
 
 Once upon a time there is a computer science student. She has been taking notes in markdown for a summer course. Now it's almost final time, and she wants to merge all of her markdown notes into a single file.
 
