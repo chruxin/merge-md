@@ -2,6 +2,10 @@
 
 [![NPM](https://nodei.co/npm/merge-md.png?compact=true)](https://www.npmjs.com/package/merge-md)
 
+<a href="https://yarnpkg.com/en/package/merge-md">
+  <img alt="Yarn" src="https://i.imgur.com/HxYZTl8.png" width="300">
+</a>
+
 
 Once upon a time there is a computer science student. She has been taking notes in markdown for a summer course. Now it's almost final time, and she wants to merge all of her markdown notes into a single file.
 
