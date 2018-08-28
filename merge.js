@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-if (process.argv.length < 2 || process.argv.length > 3) {
+if (process.argv.length < 2 || process.argv.length > 4) {
   console.log("Usage: '$ merge path/to/directory' or '$ merge' to merge files in current directory.");
   process.exit(-1);
 }
@@ -16,16 +16,25 @@ if (process.argv.length === 2) {
 }
 let mergedContent = '';
 
+let mdxEnabled = false;
+let fileExt = '.md';
+if (process.argv.includes('-mdx')){
+  mdxEnabled = true;
+  fileExt = '.mdx';
+}
+
 try {
   fs.readdirSync(path).forEach((fileName) => {
     if (fileName.indexOf('.DS_Store') === -1) {
-      mergedContent += '# ' + fileName + '\n';
+      if(!mdxEnabled){
+        mergedContent += '# ' + fileName + '\n';
+      }
       mergedContent += fs.readFileSync(path + '/' + fileName, 'utf-8') + '\n';
     }
   });
 
-  fs.writeFileSync(path + '/merged.md', mergedContent);
-  console.log(`Success! Check your merged.md in ${path}`);
+  fs.writeFileSync(path + '/merged' + fileExt, mergedContent);
+  console.log(`Success! Check your merged${fileExt} in ${path}`);
 } catch (err) {
   console.log(`Oh no, An error occurred! ${err.message}`);
   process.exit(-1);
