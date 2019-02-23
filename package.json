@@ -1,6 +1,6 @@
 {
   "name": "merge-md",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Merge files in a directory.",
   "main": "merge.js",
   "repository": {
@@ -15,5 +15,6 @@
     "merge": "./merge.js"
   },
   "author": "Mandy Chen <42ruxin@gamil.com> (http://www.mandychen.me)",
+  "contributors": ["Piotr Zaborowski <piotr.zaborowski@reactfactory.pl>"],
   "license": "MIT"
 }
